@@ -7,11 +7,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Sync
-      uses: stevenxu9494/Sync-Leetcode@v1.3
+      uses: joshcai/leetcode-sync@v1.3
       with:
         github-token: ${{ github.token }}
         leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
